@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CristianRuiz.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registro" FontSize="30" Padding="30,0,30,0"/>
+            <Label x:Name="rusuario" FontSize="22"></Label>
+            
+           
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                   
+
+
+                </Grid.RowDefinitions>
+
+               
+                <Label Text="Nombre" Grid.Column="0" Grid.Row="0"></Label>
+                <Entry x:Name="txtnombrer" Placeholder="Ingreso Nombre" Grid.Column="1" Grid.Row="0" ></Entry>
+                <Label Text="Cuota" Grid.Column="0" Grid.Row="1"></Label>
+                <Entry x:Name="txtcuotar" Placeholder="Ingreso Cuota" Grid.Column="1" Grid.Row="1" Keyboard="Numeric"></Entry>
+                <Label Text="Pago Mensual" Grid.Column="0" Grid.Row="2" ></Label>
+                <Entry x:Name="txtpago"  Grid.Column="1" Grid.Row="2" IsReadOnly="True" ></Entry>
+                <Button x:Name="calculo" Text="Calcular PM" Clicked="calculo_Clicked" Grid.Column="1" Grid.Row="3"></Button>
+                    
+
+            
+            </Grid>
+            <Button x:Name="resumen" Text="Resumen" Clicked="resumen_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

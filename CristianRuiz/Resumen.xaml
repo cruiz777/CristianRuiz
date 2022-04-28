@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CristianRuiz.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Resumen" FontSize="30" Padding="30,0,30,0"/>
+            <Label x:Name="rusuario1" FontSize="22"></Label>
+
+
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+
+
+                </Grid.RowDefinitions>
+                <Label Text="Nombre:" Grid.Column="0" Grid.Row="0"></Label>
+                <Label x:Name="nom" Grid.Column="1" Grid.Row="0"></Label>
+                <Label Text="Total" Grid.Column="0" Grid.Row="1"></Label>
+                <Label x:Name="tot" Grid.Column="1" Grid.Row="1"></Label>
+            </Grid>
+
+
+        </StackLayout>
+        
+        
+        
+        
+        
+    </ContentPage.Content>
+</ContentPage>
